@@ -1,5 +1,5 @@
 #Petster
---
+
 ##A place to share pictures of your pet, or any cute animal.
 
 * Post your own pictures, or pictures you find online.

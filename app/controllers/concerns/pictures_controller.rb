@@ -22,7 +22,7 @@ def edit
   @picture = Picture.find(params[:id])
 end
 
-def updat
+def update
   @picture = Picture.find(params[:id])
   if @picture.update(self.picture_params)
     redirect_to pictures_path(anchor: @picture.fragment_id)

@@ -1,7 +1,10 @@
 <header>Petster - A Place For Pets</header>
 
-<main>
-  <article>
-    put your picture here
-  </article>
-</main>
+<ul>
+<% @pictures.each do |picture| %>
+  <li>
+    <strong><%= picture.title %></strong> - <%= picture.description %>
+    <%= link_to "Petster", picture_path(picture) %>
+  </li>
+<% end %>
+</ul>

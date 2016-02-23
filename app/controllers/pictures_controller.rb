@@ -13,10 +13,10 @@ def new
 end
 
 def create
-  @picture = Picture.new(self.picture_params)
+  @picture = Picture.new(picture_params)
 
   if @picture.save
-    redirect_to pictures_path(anchor: @picture.fragment_id)
+    redirect_to :pictures
   else
     render :new
   end
@@ -28,8 +28,9 @@ end
 
 def update
   @picture = Picture.find(params[:id])
-  if @picture.update(self.picture_params)
-    redirect_to pictures_path(anchor: @picture.fragment_id)
+
+  if @picture.update_attributes(picture_params)
+    redirect_to :pictures
   else
     render :edit
   end
@@ -38,17 +39,11 @@ end
 def destroy
   @picture = Picture.find(params[:id])
   @picture.destroy
-
-  flash[:message] = "'#{@picture.title}' removed!"
   redirect_to pictures_path
 end
 
-def picture_params
-  params.require(:picture).permit(
-    :imgur_id,
-    :posted_on,
-    :title,
-    :description
-    )
+private
+  def picture_params
+  params.require(:picture).permit(:imgur_id, :posted_on, :title, :description)
   end
 end

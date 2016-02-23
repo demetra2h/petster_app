@@ -1,1 +1,29 @@
-<%= render "form" %>
+<h1>Edit your picture</h1>
+
+<%= form_for @pictue do |f| %>
+
+  <div>
+    <%= f.label :imgur_id %>
+    <%= f.text_field :imgur_id %>
+  </div>
+
+  <div>
+    <%= f.label :posted_on %>
+    <%= f.text_field :posted_on %>
+  </div>
+
+  <div>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div>
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+
+  <%= f.submit "Post a picture" %>
+
+<% end %>
+
+<%= link_to "Back to Petster", pictures_path %>

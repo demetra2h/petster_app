@@ -6,20 +6,20 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Picture.delete.all
-User.delete.all
+Picture.destroy_all
+User.destroy_all
 
 
 Picture.create(
-  imgur_id: XsvNTsw,
+  imgur_id: "http://imgur.com/XsvNTsw",
   posted_on: Date.parse("22-10-2015"),
   title: "Ship Pup",
   description: "this dog looks like a captain!"
-  )
+)
 
 User.create(
   name: "Francesca",
   email: "FrankiePup@puppy.com",
   password: "abc123",
   password_confirmation: "abc123"
-  )
+)

@@ -14,7 +14,7 @@ end
 
 def create
   @picture = Picture.new(picture_params)
-
+  @picture.user = current_user
   if @picture.save
     redirect_to :pictures
   else
@@ -38,7 +38,9 @@ end
 
 def destroy
   @picture = Picture.find(params[:id])
-  @picture.destroy
+  if @picture.user = current_user
+    @picture.destroy
+  end
   redirect_to pictures_path
 end
 

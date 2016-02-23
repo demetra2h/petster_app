@@ -1,4 +1,5 @@
 class Picture < ActiveRecord::Base
+  belongs_to :user
   validates :imgur_id, uniqueness: true, presence: true
   validates :title, presence: true
 

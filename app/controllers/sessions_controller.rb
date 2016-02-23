@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       redirect_to root_path, notice: "You're in!"
     else
       flash.now.alert = "You gotta try again"
-      render 'new'
+      render :new
     end
   end
 

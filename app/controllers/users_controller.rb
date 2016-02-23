@@ -10,7 +10,7 @@ class UsersController < ApplicationController
       flash[:notice]  = "You signed up for Petster! Get ready for some cute!"
       redirect_to root_path
     else
-      render "new"
+      render :new
   end
 end
 

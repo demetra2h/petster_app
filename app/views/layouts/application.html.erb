@@ -7,6 +7,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<header>
+<h1><%= link-to "Petster", pictures_path %></h1>
+</header>
+
+
 <p>
   <% if current_user %>
     Welcome, <%= current_user.name %>
@@ -19,7 +24,6 @@
   <% end %>
 </p>
 
-<%= link_to "Sign up", user_new_path %>
 <%= yield %>
 
 </body>

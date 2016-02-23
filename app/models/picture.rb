@@ -1,8 +1,12 @@
 class Picture < ActiveRecord::Base
-  validates :imgur_id, uniquness: true, presence: true
+  validates :imgur_id, uniqueness: true, presence: true
   validates :title, presence: true
 
   def imgur_link
-    "https://"
+    "http://www.imgur.com/#{self.imgur_id}"
+end
 
+  def fragment_id
+    "picture-#{self.id}"
+  end
 end

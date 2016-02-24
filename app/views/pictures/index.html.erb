@@ -8,9 +8,9 @@
 <ul>
 <% @pictures.each do |picture| %>
 
-    <h2><%= picture.title %></h2>  <%= picture.description %>
-    <p><%= link_to "Make some changes", picture_path(picture) %></p>
+    <h2><%= picture.title %></h2>  <p><%= picture.description %></p>
     <img src="<%= picture.imgur_id %>" class="pet-pic">
+    <p><%= link_to "Make some changes", picture_path(picture) %></p>
 
 <% end %>
 </ul>

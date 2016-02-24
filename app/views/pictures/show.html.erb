@@ -1,7 +1,7 @@
 <h1> <%= @picture.title %> </h1>
 <h3>Posted by: <%= @picture.user.name %></h3>
 
-
+<h4><%= link_to @picture.title, @picture.imgur_id %></h4>
 
 <%= link_to "Back to cute", pictures_path %>
 

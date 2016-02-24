@@ -1,16 +1,16 @@
 <p id="notice"><%= notice %></p>
-<header>Petster - A Place For Pets</header>
+<h1>Petster</h1><p>A Place For Pets</p>
 
 <% if current_user %>
-  <%= link_to "Add a Petster", new_picture_path %>
+  <%= link_to "Add a Pet", new_picture_path %>
 <% end %>
 
 <ul>
 <% @pictures.each do |picture| %>
-  <li>
-    <strong><%= picture.title %></strong> - <%= picture.description %>
-    <%= link_to "Petster", picture_path(picture) %>
+
+    <h2><%= picture.title %></h2>  <%= picture.description %>
+    <p><%= link_to "Make some changes", picture_path(picture) %></p>
     <img src="<%= picture.imgur_id %>" class="pet-pic">
-  </li>
+
 <% end %>
 </ul>

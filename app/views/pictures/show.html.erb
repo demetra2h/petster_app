@@ -1,6 +1,8 @@
 <h1> <%= @picture.title %> </h1>
 <h3>Posted by: <%= @picture.user.name %></h3>
 
+
+
 <%= link_to "Back to cute", pictures_path %>
 
 <% if @picture.user == current_user %>

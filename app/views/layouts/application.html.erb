@@ -10,7 +10,7 @@
 
 <p>
   <% if current_user %>
-    Welcome, <%= current_user.name %>
+    Woof woof, hi <%= current_user.name %>!
     &nbsp;&nbsp;|&nbsp;&nbsp;
     <%= link_to 'Logout', session_path('dummy'), method: :delete %>
   <% else %>

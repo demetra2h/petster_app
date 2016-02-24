@@ -2,10 +2,12 @@ body {
   background: url("http://i.imgur.com/WgtOyIa.jpg") no-repeat;
   background-size: cover;
   font-family: monaco, sans-serif;
-  color: #D5DBDB;
+  color: #EBDEF0;
   text-align: center;
 }
 
 .pet-pic {
-  width: 300px;
+  width: 400px;
+  border: 6px solid #EBDEF0;
+  border-radius: 7px
 }

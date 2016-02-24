@@ -1,10 +1,11 @@
 <h1>Post a picture</h1>
 
-<%= form_for @picture do |f| %>
+<%= form_for @picture, url: users_path, html: { multipart: true } do |f| %>
 
   <div>
-    <%= f.label :picture_link %>
+    <%= f.label :imgur_id %>
     <%= f.text_field :imgur_id %>
+    <%= f.file_field :picture %>
   </div>
 
   <div>

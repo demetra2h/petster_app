@@ -46,6 +46,6 @@ end
 
 private
   def picture_params
-  params.require(:picture).permit(:imgur_id, :posted_on, :title, :description)
+    params.require(:picture).permit(:imgur_id, :posted_on, :title, :description, :image)
   end
 end

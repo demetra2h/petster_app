@@ -1,12 +1,17 @@
 <h1>Post a picture</h1>
 
-<%= form_for @picture, url: users_path, html: { multipart: true } do |f| %>
+<%= form_for @picture, html: { multipart: true } do |f| %>
 
   <div>
-    <%= f.label :imgur_id %>
+    <%= f.label :imgur_id, "Add image from online" %>
     <%= f.text_field :imgur_id %>
-    <%= f.file_field :picture %>
   </div>
+
+  <div>
+    <%= f.label :image, "… or upload an image from your computer" %>
+    <%= f.file_field :image %>
+  </div>
+
 
   <div>
     <%= f.label :title %>

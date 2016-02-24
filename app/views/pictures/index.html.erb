@@ -9,7 +9,11 @@
 <% @pictures.each do |picture| %>
 
     <h2><%= picture.title %></h2>  <p><%= picture.description %></p>
-    <img src="<%= picture.imgur_id %>" class="pet-pic">
+    <% if picture.imgur_id.present? %>
+      <img src="<%= picture.imgur_id %>" class="pet-pic">
+    <% else %>
+      <img src="<%= picture.image %>" class="pet-pic">
+    <% end %>
     <p><%= link_to "Make some changes", picture_path(picture) %></p>
 
 <% end %>

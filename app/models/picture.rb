@@ -4,7 +4,7 @@ class Picture < ActiveRecord::Base
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
 
   belongs_to :user
-  validates :imgur_id, uniqueness: true, presence: true
+  # validates :imgur_id, uniqueness: true, presence: true
   validates :title, presence: true
 
   def imgur_link

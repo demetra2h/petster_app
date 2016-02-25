@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root "pictures#index"
 
+  get "about/" => "pages#about"
+
   get "pictures/" => "pictures#index"
 
   get "pictures/new" => "pictures#new", as: :new_picture

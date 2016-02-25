@@ -1,23 +1,24 @@
-<h1>Edit your picture</h1>
+<div class="container" id="add_post_container">
+<h1 class="text-center">Edit your picture</h1>
 
 <%= form_for @picture do |f| %>
 
-  <div>
+  <div class="form-group">
     <%= f.label :picture_link %>
-    <%= f.text_field :imgur_id %>
+    <input class="form-control" <%= f.text_field :imgur_id %>
   </div>
 
-  <div>
+  <div class="form-group">
     <%= f.label :title %>
-    <%= f.text_field :title %>
+    <input class="form-control" <%= f.text_field :title %>
   </div>
 
-  <div>
+  <div class="form-group">
     <%= f.label :description %>
-    <%= f.text_field :description %>
+    <input class="form-control" id="description" <%= f.text_field :description %>
   </div>
 
-  <%= f.submit "Post a picture" %>
+  <%= f.submit "Update picture" %>
 
 <% end %>
 

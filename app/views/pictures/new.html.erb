@@ -6,22 +6,22 @@
 
   <div class="form-group">
     <%= f.label :imgur_id, "Add an image from online" %>
-    <input class="form-control" placeholder="image id" <%= f.text_field :imgur_id %>
+    <input class="form-control" <%= f.text_field :imgur_id %>
   </div>
 
   <div class="form-group">
     <%= f.label :image, "… or upload an image from your computer" %>
-    <input id="image_box" placeholder="Image Post" <%= f.file_field :image %>
+    <input id="image_box" <%= f.file_field :image %>
   </div>
 
   <div class="form-group">
-    <%= f.label :title, "title" %>
-    <input class="form-control" placeholder="title" <%=f.text_field :title %>
+    <%= f.label :title, "Title" %>
+    <input class="form-control" <%=f.text_field :title %>
   </div>
 
   <div class="form-group">
     <%= f.label :description %>
-    <input class="form-control" id="description" placeholder="description" <%= f.text_field :description %>
+    <input class="form-control" id="description" <%= f.text_field :description, :maxlength =>150, :placeholder => "Write description here. (Max characters are 150)" %>
   </div>
 
   <div class="actions"><%= f.submit "Post picture" %></div>

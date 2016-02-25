@@ -7,8 +7,8 @@
 
 <ul>
 <% @pictures.each do |picture| %>
-
     <h2><%= picture.title %></h2>  <p><%= picture.description %></p>
+
     <% if picture.imgur_id.present? %>
       <img src="<%= picture.imgur_id %>" class="pet-pic">
     <% else %>

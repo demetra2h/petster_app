@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root "pictures#index"
 
-  get "about/" => "pages#about"
+  get "/about" => "pages#about"
 
   get "pictures/" => "pictures#index"
 

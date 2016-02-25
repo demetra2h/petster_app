@@ -1,12 +1,9 @@
 <div class="container" id="add_post_container">
 <h1 class="text-center">Edit your picture</h1>
 
+<div class="col-md-4 col-md-offset-4">
 <%= form_for @picture do |f| %>
 
-  <div class="form-group">
-    <%= f.label :picture_link %>
-    <input class="form-control" <%= f.text_field :imgur_id %>
-  </div>
 
   <div class="form-group">
     <%= f.label :title %>
@@ -15,10 +12,12 @@
 
   <div class="form-group">
     <%= f.label :description %>
-    <input class="form-control" id="description" <%= f.text_field :description %>
+    <%= f.text_area :description, class: 'form-control', id: 'description', :maxlength =>130, :placeholder => "Write a description here, 130 characters max" %>
   </div>
 
-  <%= f.submit "Update picture" %>
+  <div class="submit">
+    <%= f.submit "Update picture" %>
+  </div>
 
 <% end %>
 

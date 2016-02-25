@@ -6,7 +6,7 @@
 <% end %>
 
 <ul>
-<% @pictures.each do |picture| %>
+<% @pictures.order(:created_at => :desc).each do |picture| %>
     <h2><%= picture.title %></h2>  <p><%= picture.description %></p>
 
     <% if picture.imgur_id.present? %>

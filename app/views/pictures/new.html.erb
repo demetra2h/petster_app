@@ -21,7 +21,7 @@
 
   <div class="form-group">
     <%= f.label :description %>
-    <input class="form-control" id="description" <%= f.text_field :description, :maxlength =>150, :placeholder => "Write description here. (Max characters are 150)" %>
+    <%= f.text_area :description, class: 'form-control', id: 'description', :maxlength =>130, :placeholder => "Write description here, 130 max characters" %>
   </div>
 
   <div class="actions"><%= f.submit "Post picture" %></div>

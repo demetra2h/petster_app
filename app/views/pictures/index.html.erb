@@ -2,7 +2,7 @@
 <h1>Petster</h1><h1>A Place For Pets</h1>
 
 <% if current_user %>
-  <%= link_to "Add a Pet", new_picture_path %>
+  <%= link_to '<button type="button">Add a Pet</button>' .html_safe, new_picture_path %>
 <% end %>
 
 <ul>
@@ -14,7 +14,9 @@
     <% else %>
       <img src="<%= picture.image %>" class="pet-pic">
     <% end %>
-    <p><%= link_to "Make some changes", picture_path(picture) %></p>
+    <p><%= link_to '<button type="button">Make some changes</button>' .html_safe, picture_path(picture) %></p>
 
 <% end %>
 </ul>
+
+

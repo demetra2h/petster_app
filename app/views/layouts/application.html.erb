@@ -12,13 +12,25 @@
 
 <p>
   <% if current_user %>
-    Woof woof, hi <%= current_user.name %>!
+    <%= link_to root_path, class: "no-decoration" do %>
+      Woof woof, hi <%= current_user.name %>!
+    <% end %>
     &nbsp;&nbsp;|&nbsp;&nbsp;
-    <%= link_to '<button type="button">Logout</button>' .html_safe, session_path('dummy'), method: :delete %>
+    <%= link_to session_path('dummy'), method: :delete do %>
+      <button type="button">Logout</button>
+    <% end %>
   <% else %>
-    <%= link_to '<button type="button">Login</button>' .html_safe, login_path %>
+    <%= link_to new_user_path do %>
+      <button type="button">Sign up!</button>
+    <% end %>
     &nbsp;&nbsp;|&nbsp;&nbsp;
-    <%= link_to '<button type="button">Sign Up</button>' .html_safe, new_user_path %>
+    <%= link_to login_path do %>
+      <button type="button">Log in</button>
+    <% end %>
+  <% end %>
+  &nbsp;&nbsp;|&nbsp;&nbsp;
+  <%= link_to about_path do %>
+    <button type="button">About</button>
   <% end %>
 </p>
 

@@ -1,30 +1,31 @@
-<h1>Post a picture</h1>
+<div class="container" id="add_post_container">
+  <h1 class="text-center">Post a picture</h1>
 
-<%= form_for @picture, html: { multipart: true } do |f| %>
+<div class="col-md-4 col-md-offset-4">
+  <%= form_for @picture, html: { multipart: true } do |f| %>
 
-  <div>
+  <div class="form-group">
     <%= f.label :imgur_id, "Add an image from online" %>
-    <%= f.text_field :imgur_id %>
+    <input class="form-control" placeholder="image id" <%= f.text_field :imgur_id %>
   </div>
 
-  <div>
+  <div class="form-group">
     <%= f.label :image, "… or upload an image from your computer" %>
-    <%= f.file_field :image %>
+    <input id="image_box" placeholder="Image Post" <%= f.file_field :image %>
   </div>
 
-
-  <div>
-    <%= f.label :title %>
-    <%= f.text_field :title %>
+  <div class="form-group">
+    <%= f.label :title, "title" %>
+    <input class="form-control" placeholder="title" <%=f.text_field :title %>
   </div>
 
-  <div>
+  <div class="form-group">
     <%= f.label :description %>
-    <%= f.text_field :description %>
+    <input class="form-control" id="description" placeholder="description" <%= f.text_field :description %>
   </div>
 
-  <%= f.submit "Post a picture" %>
-
+  <div class="actions"><%= f.submit "Post picture" %></div>
+  </div>
 <% end %>
 
 <%= link_to '<button type="button">Back to Petster</button>' .html_safe, pictures_path %>

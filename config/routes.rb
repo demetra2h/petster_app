@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   root "pictures#index"
 
   get "/about" => "pages#about"

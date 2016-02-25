@@ -2,7 +2,7 @@
 <%= @picture.description %>
 <h3>Posted by: <%= @picture.user.name %></h3>
 
-<p><img src="<%= @picture.imgur_id %>"></p>
+<p><img src="<%= @picture.imgur_id %>" class="pet-pic"></p>
 
 <%= link_to '<button type="button">Back to cute</button>'.html_safe, pictures_path %>
 

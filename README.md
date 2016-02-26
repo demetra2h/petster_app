@@ -37,9 +37,11 @@
 
 
 ##Design approach
--I wanted to model this after Instagram.
+-I wanted to model this after Instagram, but a little more character.
 
 ##How to install
+-If you wan to fork this repo follow these<a href="https://help.github.com/articles/fork-a-repo/">instructions</a>
+
 -Click on this <a href="https://stark-ridge-55555.herokuapp.com/about">Heroku</a>
 
 -Sign up and you can get in on the fun of Petster.
@@ -51,7 +53,7 @@
 
 -Follow specific people.
 
--Apersonalized timeline.
+-A personalized timeline.
 
 -Take a look at my 
 <a href ="https://trello.com/b/gyhMlRtg/project2-petster-app">Trello</a> to see my progress and ideas.

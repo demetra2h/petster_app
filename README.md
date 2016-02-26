@@ -31,7 +31,14 @@
 
 -Trello
 
--Heroku
+-<a href="https://www.heroku.com/">Heroku</a>
+
+##Design approach
+-I wanted to model this after Instagram.
+
+##How to install
+-Click on this <a href="https://stark-ridge-55555.herokuapp.com/about">Heroku</a>
+
 
 ###Icebox
 -A way to add likes.
@@ -39,6 +46,8 @@
 -Search using tags.
 
 -Follow specific people.
+
+-Apersonalized timeline.
 
 -Take a look at my 
 <a href ="https://trello.com/b/gyhMlRtg/project2-petster-app">Trello</a> to see my progress and ideas.

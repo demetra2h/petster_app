@@ -40,12 +40,12 @@
 -I wanted to model this after <a href="https://www.instagram.com/">Instagram</a>, but a little more character.
 
 -Wireframes:
-<a href="http://i.imgur.com/edbS5El.jpg">
-<a href="http://i.imgur.com/Lz1NCTz.jpg">
-<a href="http://i.imgur.com/mON330T.jpg">
+<a href="http://i.imgur.com/edbS5El.jpg"></a>
+<a href="http://i.imgur.com/Lz1NCTz.jpg"></a>
+<a href="http://i.imgur.com/mON330T.jpg"></a>
 
 -ERD:
-<a href="http://i.imgur.com/8LCJ393.jpg">
+<a href="http://i.imgur.com/8LCJ393.jpg"></a>
 
 ##How to install
 -If you want to fork this repo follow these<a href="https://help.github.com/articles/fork-a-repo/"> instructions</a>

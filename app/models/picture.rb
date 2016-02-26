@@ -8,7 +8,7 @@ class Picture < ActiveRecord::Base
   validates :title, presence: true
 
   def imgur_link
-    "http://www.imgur.com/#{self.imgur_id}"
+    "https://www.i.imgur.com/#{self.imgur_id}"
   end
 
   def fragment_id

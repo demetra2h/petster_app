@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.2.3'
+
 gem 'dotenv-rails', :groups => [:development, :test]
 gem 'pry-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -46,3 +48,7 @@ group :development do
   gem 'spring'
 end
 
+group :production do
+  gem 'rails_12factor'
+  gem 'thin'
+end

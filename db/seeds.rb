@@ -9,18 +9,19 @@
 Picture.destroy_all
 User.destroy_all
 
-Picture.create(
-  user_id: 3,
-  imgur_id: "https://i.imgur.com/XsvNTsw.jpg",
-  posted_on: Date.parse("22-10-2015"),
-  title: "Ship Pup",
-  description: "this dog looks like a captain!"
-)
-
-User.create(
+u = User.create(
   name: "Francesca",
   email: "FrankiePup@puppy.com",
   password: "abc123",
   password_confirmation: "abc123",
   admin: true
 )
+
+Picture.create(
+  user: u,
+  imgur_id: "https://i.imgur.com/XsvNTsw.jpg",
+  posted_on: Date.parse("22-10-2015"),
+  title: "Ship Pup",
+  description: "this dog looks like a captain!"
+)
+

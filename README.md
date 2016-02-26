@@ -40,7 +40,7 @@
 -I wanted to model this after Instagram, but a little more character.
 
 ##How to install
--If you wan to fork this repo follow these<a href="https://help.github.com/articles/fork-a-repo/">instructions</a>
+-If you want to fork this repo follow these<a href="https://help.github.com/articles/fork-a-repo/"> instructions</a>
 
 -Click on this <a href="https://stark-ridge-55555.herokuapp.com/about">Heroku</a>
 

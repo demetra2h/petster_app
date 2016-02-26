@@ -14,8 +14,9 @@
     <% else %>
       <img src="<%= picture.image %>" class="pet-pic">
     <% end %>
-    <p><%= link_to '<button type="button">Make some changes</button>' .html_safe, picture_path(picture) %></p>
-
+    <% if current_user %>
+      <p><%= link_to '<button type="button">Make some changes</button>' .html_safe, picture_path(picture) %></p>
+    <% end %>
 <% end %>
 </ul>
 

@@ -10,7 +10,7 @@ Picture.destroy_all
 User.destroy_all
 
 Picture.create(
-  imgur_id: "http://imgur.com/XsvNTsw",
+  imgur_id: "https://imgur.com/XsvNTsw",
   posted_on: Date.parse("22-10-2015"),
   title: "Ship Pup",
   description: "this dog looks like a captain!"

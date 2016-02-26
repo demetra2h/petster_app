@@ -1,5 +1,4 @@
-#Petster -
-##A place for pets
+#Petster - A place for pets
 
 -Application allows users to share pictures of pets.
 

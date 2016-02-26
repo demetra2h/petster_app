@@ -15,8 +15,6 @@
 -Be able to see what others have posted.
 
 ###Technologies used
--Ruby
-
 -Ruby on Rails
 
 -Bootstrap
@@ -24,6 +22,8 @@
 -CSS
 
 -HTML
+
+-<a href="http://robmclarty.com/blog/how-to-install-image-magick-and-setup-paperclip">Image Magick</a> to help with the installation and set up of Paperclip.
 
 -<a href="https://github.com/thoughtbot/paperclip">Paperclip</a> gem to upload pictures from a users computer.
 
@@ -37,7 +37,15 @@
 
 
 ##Design approach
--I wanted to model this after Instagram, but a little more character.
+-I wanted to model this after <a href="https://www.instagram.com/">Instagram</a>, but a little more character.
+
+-Wireframes:
+<a href="http://i.imgur.com/edbS5El.jpg">
+<a href="http://i.imgur.com/Lz1NCTz.jpg">
+<a href="http://i.imgur.com/mON330T.jpg">
+
+-ERD:
+<a href="http://i.imgur.com/8LCJ393.jpg">
 
 ##How to install
 -If you want to fork this repo follow these<a href="https://help.github.com/articles/fork-a-repo/"> instructions</a>
@@ -47,7 +55,7 @@
 -Sign up and you can get in on the fun of Petster.
 
 ###Icebox
--A way to add likes.
+-Likes.
 
 -Search using tags.
 
